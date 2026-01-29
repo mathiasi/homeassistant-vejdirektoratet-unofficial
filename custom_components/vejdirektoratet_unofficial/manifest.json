@@ -1,5 +1,5 @@
 {
-  "domain": "vejdirektoratet",
+  "domain": "vejdirektoratet_unofficial",
   "name": "Vejdirektoratet (Unofficial)",
   "codeowners": ["@mathiasi"],
   "config_flow": true,
