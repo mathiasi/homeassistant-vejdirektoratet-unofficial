@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Vejdirektoratet (Unofficial)",
-        "description": "This will set up road salting status monitoring using your Home Assistant home location ({latitude}, {longitude})."
+        "description": "Set up the Vejdirektoratet (Unofficial) integration to get traffic information from the Danish Road Directorate."
       }
     },
     "abort": {
