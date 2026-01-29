@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vejdirektoratet",
+        "description": "Set up the Vejdirektoratet integration to get traffic data from the Danish Road Directorate."
+      }
+    },
+    "abort": {
+      "already_configured": "This integration is already configured."
+    }
+  }
+}
