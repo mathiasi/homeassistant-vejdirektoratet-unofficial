@@ -20,7 +20,7 @@ Unofficial Home Assistant integration for [Vejdirektoratet](https://www.vejdirek
 
 ### Manual Installation
 
-1. Copy the `custom_components/vejdirektoratet` folder to your Home Assistant's `custom_components` directory
+1. Copy the `custom_components/vejdirektoratet_unofficial` folder to your Home Assistant's `custom_components` directory
 2. Restart Home Assistant
 
 ## Configuration
