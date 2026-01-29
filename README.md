@@ -4,6 +4,8 @@
 
 Unofficial Home Assistant integration for [Vejdirektoratet](https://www.vejdirektoratet.dk/) (Danish Road Directorate).
 
+This integration provides winter road salting status for roads near your Home Assistant home location.
+
 ## Installation
 
 ### HACS (Recommended)
@@ -30,11 +32,33 @@ Unofficial Home Assistant integration for [Vejdirektoratet](https://www.vejdirek
 3. Search for "Vejdirektoratet"
 4. Follow the setup wizard
 
+The integration uses your Home Assistant home location to find nearby roads.
+
 ## Sensors
 
 This integration provides the following sensors:
 
-- *Coming soon*
+| Sensor | Description |
+|--------|-------------|
+| Winter Roads Overall Status | Best salting status among all nearby roads |
+| Winter Roads Total Roads | Total number of roads being monitored |
+| Winter Roads Salting Now | Number of roads currently being salted |
+| Winter Roads Salted < 12h | Number of roads salted within the last 12 hours |
+| Winter Roads Salted 12-48h | Number of roads salted 12-48 hours ago |
+| Winter Roads Salted > 48h | Number of roads not salted in the last 48 hours |
+| Winter Roads Unknown Status | Number of roads with unknown salting status |
+
+### Status Values
+
+- **Salting Now** - Road is currently being salted
+- **Salted < 12h ago** - Road was salted within the last 12 hours
+- **Salted 12-48h ago** - Road was salted between 12 and 48 hours ago
+- **Salted > 48h ago** - Road has not been salted in the last 48 hours
+- **Unknown** - Salting status is unknown
+
+## Data Source
+
+Data is fetched from Vejdirektoratet's public traffic information service and updated every 30 minutes.
 
 ## License
 
