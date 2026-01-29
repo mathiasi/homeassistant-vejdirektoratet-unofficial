@@ -1,0 +1,12 @@
+{
+  "domain": "vejdirektoratet",
+  "name": "Vejdirektoratet (Unofficial)",
+  "codeowners": ["@mathiasi"],
+  "config_flow": true,
+  "documentation": "https://github.com/mathiasi/homeassistant-vejdirektoratet-unofficial",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/mathiasi/homeassistant-vejdirektoratet-unofficial/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
