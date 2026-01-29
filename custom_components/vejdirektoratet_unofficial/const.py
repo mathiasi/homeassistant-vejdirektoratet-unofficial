@@ -1,3 +1,3 @@
 """Constants for the Vejdirektoratet integration."""
 
-DOMAIN = "vejdirektoratet"
+DOMAIN = "vejdirektoratet_unofficial"
