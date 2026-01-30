@@ -31,6 +31,7 @@ class VejdirektoratetCoordinator(DataUpdateCoordinator):
 
     async def _async_update_data(self) -> dict:
         """Fetch data from the API."""
+        _LOGGER.debug("Starting data update")
         try:
             # Always use current home location from Home Assistant
             latitude = self.hass.config.latitude
@@ -58,6 +59,12 @@ class VejdirektoratetCoordinator(DataUpdateCoordinator):
             else:
                 overall_status = SaltingStatus.UNKNOWN
 
+            _LOGGER.debug(
+                "Updated Vejdirektoratet data: %d roads, overall status: %s",
+                len(roads),
+                overall_status.value,
+            )
+
             return {
                 "roads": roads,
                 "status_counts": status_counts,
@@ -68,4 +75,5 @@ class VejdirektoratetCoordinator(DataUpdateCoordinator):
             }
 
         except Exception as err:
+            _LOGGER.error("Failed to update Vejdirektoratet data: %s", err)
             raise UpdateFailed(f"Error fetching Vejdirektoratet data: {err}") from err
